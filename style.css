@@ -29,7 +29,6 @@ a{
 .desktop-header{
     background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 60px;
-    /* background-image: url("images/bg-pattern-intro-desktop.svg"); */
 }
 .left-links {
     display: flex;
@@ -203,6 +202,73 @@ footer{
 .footer-logo img{
     width: 80px;
 }
+
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 120px;
+    margin-top: 20px;
+    left: 180px;
+    pointer-events: none;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.company-dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+    margin-top: 20px;
+    left: 320px;
+    pointer-events: none;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.connect-dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+    margin-top: 20px;
+    left: 440px;
+    pointer-events: none;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.connect-dropdown a{
+    color: hsl(207, 13%, 34%);
+}
+/* .connect-dropdown a:hover{
+    color: black;
+} */
+.company-dropdown a{
+    color: hsl(207, 13%, 34%);
+}
+.dropdown-content a{
+    color: hsl(207, 13%, 34%);
+    font-family: Overpass;
+    cursor: pointer;
+}
+.opacity-none{
+    opacity: 0;
+}
+.dropdown-content a:hover{
+    color: black;
+}
+
 
 
 
