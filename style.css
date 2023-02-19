@@ -13,6 +13,7 @@
 
 body{
     max-width: 1440px;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -283,9 +284,6 @@ footer{
 
 
 
-
-
-
   @media only screen and (max-width: 900px){
 
     .desktop-header-flex{
@@ -293,7 +291,7 @@ footer{
     }
     .design-div{
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
         "design-pic"
         "text-design";
@@ -371,12 +369,13 @@ footer{
     .mobile-menu{
         position: absolute;
         width: 90%;
-        height: 450px;
+        height: 500px;
         background-color: white;
         border-radius: 5px;
         top: 100px;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
         display: none;
+        padding: 20px;
     }
     .active{
         display: block;
@@ -402,20 +401,25 @@ footer{
         cursor: pointer;
     }
     .dropdown-menu a:hover{
-        /* color: hsl(240, 10%, 16%); */
         color: hsl(355, 100%, 74%);
     }
     .dropdown-menu a:nth-child(1){
         margin-top: 10px;
     }
     .dropdown-btn{
-        margin-top: 30px;
+        margin-top: 20px;
         display: flex;
         gap: 5px;
         justify-content: center;
         margin-bottom: 20px;
         align-items: center;
         cursor: pointer;
+    }
+    .dropdown-btn a{
+        font-family: Overpass, sans-serif;
+        font-weight: 600;
+        color: hsl(237, 23%, 32%);
+        font-size: 18px;
     }
     .dropdown-btn:hover .dropdown-menu{
         display: flex;
@@ -430,4 +434,53 @@ footer{
         display: none;
         cursor: pointer;
     }
+    .mobile-menu-buttons{
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-menu-buttons button{
+        display: block;
+        /* border: 1px solid black; */
+    }
+    .mobile-menu-buttons button:nth-child(1){
+        color: hsl(237, 23%, 32%);
+        font-size: 18px;
+        background-color: transparent;
+        padding: 10px 30px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .mobile-menu-buttons button:nth-child(2){
+        padding: 15px 10px;
+        border-radius: 30px;
+        width: 50%;
+        font-family: Overpass;
+        font-size: 18px;
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        outline: none;
+        border: none;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    hr{
+        margin-top: 20px;
+    }
   }
+
+  /* @media only screen and (min-width: 400px) and (max-width: 899px){
+    .design-div{
+        grid-template-rows: 400px 1fr;
+    }
+  }
+
+  @media only screen and (min-width: 530px) and (max-width: 899px){
+    .design-div{
+        grid-template-rows: auto;
+    }
+  } */

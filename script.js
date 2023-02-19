@@ -50,3 +50,21 @@ closeDiv.addEventListener("click", () => {
     closeDiv.style.display = "none";
     hamburger.style.display = "block";
 })
+
+window.addEventListener("mouseup", function(event){
+    if(event.target != connectBtn && event.target.parentNode != connectBtn){
+        connectDropdown.classList.add("opacity-none");
+    }
+})
+
+window.addEventListener("mouseup", (event) => {
+    if(event.target != companyBtn && event.target.parentNode != companyBtn){
+        companyDropdown.classList.add("opacity-none");
+    }
+})
+
+window.addEventListener("mouseup", (event) => {
+    if(event.target != productBtn && event.target.parentNode != productBtn){
+        productDropdown.classList.add("opacity-none");
+    }
+})
