@@ -199,6 +199,9 @@ footer{
     font-size: 13px;
     color: hsl(240, 2%, 79%);
 }
+.grid-footer a:hover{
+    color: hsl(355, 100%, 74%);
+}
 .footer-logo img{
     width: 80px;
 }
@@ -251,9 +254,6 @@ footer{
 .connect-dropdown a{
     color: hsl(207, 13%, 34%);
 }
-/* .connect-dropdown a:hover{
-    color: black;
-} */
 .company-dropdown a{
     color: hsl(207, 13%, 34%);
 }
@@ -402,7 +402,8 @@ footer{
         cursor: pointer;
     }
     .dropdown-menu a:hover{
-        color: hsl(240, 10%, 16%);
+        /* color: hsl(240, 10%, 16%); */
+        color: hsl(355, 100%, 74%);
     }
     .dropdown-menu a:nth-child(1){
         margin-top: 10px;
@@ -424,5 +425,9 @@ footer{
     }
     .menu-btn:hover .dropdown-menu{
         display: flex;
+    }
+    .close-div{
+        display: none;
+        cursor: pointer;
     }
   }

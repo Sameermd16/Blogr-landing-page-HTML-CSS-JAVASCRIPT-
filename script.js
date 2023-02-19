@@ -7,6 +7,7 @@ const connectDropdown = document.getElementById("connect-dropdown");
 const dropdownBtn = document.getElementById("dropdown-btn");
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobile-menu");
+const closeDiv = document.getElementById("close-div");
 
 productBtn.addEventListener("click", () => {
     if (productDropdown.classList.contains("opacity-none")){
@@ -39,4 +40,13 @@ connectBtn.addEventListener("click", () => {
 
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
+    hamburger.style.display = "none";
+    closeDiv.style.display = "block";
+})
+
+closeDiv.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    // mobileMenu.style.display = "none";
+    closeDiv.style.display = "none";
+    hamburger.style.display = "block";
 })
